@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <script>
+const http = new XMLHttpRequest(); 
+const url='http://127.0.0.1:9091/couponapi/coupons/SUPERSALE'; 
+http.open("GET", url);
+http.send();
+http.onreadystatechange = (e) => { document
+.getElementById("root")
+.innerHTML = http.responseText; 
+}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

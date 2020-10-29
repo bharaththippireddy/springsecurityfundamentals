@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Create Coupon</title>
+</head>
+<body>
+<h2>Create Coupon</h2>
+<form action="#" th:action="@{/saveCoupon}" method="post">
+
+Code:<input name="code"/> 
+Discount:<input name="discount"/> 
+Expiry Date:<input name="expDate"/> 
+<input type="submit" value="Save"/> 
+</form>
+
+</body>
+</html>
