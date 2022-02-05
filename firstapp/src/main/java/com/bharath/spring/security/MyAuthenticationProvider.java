@@ -8,15 +8,15 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.stereotype.Component;
-
+test pulltest pulltest pulltest pull
 @Component
 public class MyAuthenticationProvider implements AuthenticationProvider {
 
 	@Override
-	public Authentication authenticate(Authentication authentication) throws AuthenticationException {
+	public Authentication authenticatest pullte(Authentication authentication) throws AuthenticationException {
 		String userName = authentication.getName();
 		String password = authentication.getCredentials().toString();
-		if ("tom".equals(userName) && "cruise".equals(password)) {
+		if ("tom".equals(test pulltest pull) && "cruise".equals(password)) {
 			return new UsernamePasswordAuthenticationToken(userName, password, Arrays.asList());
 		} else {
 			throw new BadCredentialsException("Invalid Username or Passwrod");
