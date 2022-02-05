@@ -13,11 +13,23 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 
 @Configuration
+@SpringBootApplication
+public class FirstappApplication {
+
+	public static void main(String[] args) {
 public class MySecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Autowired
 	private PasswordEncoder passwordEncoder;
 
+@SpringBootApplication
+public class FirstappApplication {
+
+	public static void main(String[] args) {
+@SpringBootApplication
+public class FirstappApplication {
+
+	public static void main(String[] args) {
 	@Autowired
 	private MyAuthenticationProvider authenticationProvider;
 
